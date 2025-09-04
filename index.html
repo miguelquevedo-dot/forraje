@@ -394,24 +394,34 @@
                 <div>
                     <!-- Este es mi comentario -->
                     <form action="https://formspree.io/f/mvgbqyjj" method="POST" class="bg-white p-8 rounded-xl shadow-md">
-                    <!--<form class="bg-white p-8 rounded-xl shadow-md">-->
                         <div class="mb-6">
                             <label for="name" class="block text-gray-700 font-medium mb-2">Nombre completo</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            <input type="text" id="name" name="name" 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500" required>
                         </div>
+
                         <div class="mb-6">
                             <label for="email" class="block text-gray-700 font-medium mb-2">Correo electrónico</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500" required>
                         </div>
+
                         <div class="mb-6">
                             <label for="phone" class="block text-gray-700 font-medium mb-2">Teléfono</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
                         </div>
+
                         <div class="mb-6">
                             <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500" required></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-emerald-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-emerald-700 transition duration-300">Enviar mensaje</button>
+
+                        <button type="submit"
+                            class="w-full bg-emerald-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-emerald-700 transition duration-300">
+                            Enviar mensaje
+                        </button>
                     </form>
                 </div>
             </div>
@@ -553,4 +563,5 @@
         });
     </script>
 </body>
+
 </html>
